@@ -1,4 +1,4 @@
-# Pacman
+# Pacman1
 
 Pacman is a flat and responsive design theme for [Hexo](http://hexo.io).
 
