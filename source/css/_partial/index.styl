@@ -39,7 +39,7 @@
         color color-font
         display block
         margin 0.5em 0
-        font-size 0.5em
+        font-size 0.9em
 
 .moveMain
   margin-left 10% !important
@@ -48,7 +48,7 @@
   background color-section
   text-align center
   overflow hidden
-  a, span
+  a
     display inline-block
     padding 0.5em 1em
   a
@@ -62,10 +62,21 @@
     transition border-left .5s
     &:hover
       border-left 0.5em solid color-theme
+    span:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f053"
+      padding-right 0.5em
   .next
     float right
+    span:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f054"
+      padding-left 0.5em
   .page-number
     display none
+    padding 0.5em 1em
     @media mini
       display inline-block
   .current
@@ -129,11 +140,18 @@
     margin-left 2% !important
   section.post
     width 100%
-    @media mini
+    time
+      font-size 1.1em !important
+      float left
+      @media phonemax
+        width 100%
+      @media tablet
+        width 20%
+/*    @media mini
       float left
       width 50%
     @media tablet
-      width 33.333%
+      width 33.333%  */
 
 .archive-nav
   @media mini
